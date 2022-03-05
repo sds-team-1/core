@@ -652,7 +652,7 @@ class Session:
         # set state and read xml
         state = EventTypes.CONFIGURATION_STATE if start else EventTypes.DEFINITION_STATE
         self.set_state(state)
-        self.name = file_path.name
+        self.name = Path(file_path).name
         self.file_path = file_path
         CoreXmlReader(self).read(file_path)
         # start session if needed
