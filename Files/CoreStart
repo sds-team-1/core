@@ -1,0 +1,5 @@
+#!/bin/bash
+core-python RunFromXML
+cd /tmp/pycore.1/n1.conf
+python3 -m http.server
+
