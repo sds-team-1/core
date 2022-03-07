@@ -34,8 +34,8 @@ Add a node to the session, based on the provided node data.
 :return: created node
 :raises core.CoreError: when an invalid node type is given
 """
-options = NodeOptions(x=100, y=100)
-n1 = session.add_node(CoreNode, options=options)
+#options = NodeOptions(x=100, y=100)
+#n1 = session.add_node(CoreNode, options=options)
 	
 
 print('test')

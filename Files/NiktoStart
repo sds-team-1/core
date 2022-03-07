@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo vcmd -c /tmp/pycore.1/n12  nikto -h 10.0.1.21 -p 8000
