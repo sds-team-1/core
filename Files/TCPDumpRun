@@ -1,4 +1,0 @@
-#!/bin/bash
-
-sudo vcmd -c /tmp/pycore.1/n11  tcpdump -w /home/ubuntu/core/Files/Captures/mycap.pcap
-
