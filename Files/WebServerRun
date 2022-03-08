@@ -1,5 +1,0 @@
-#!/bin/bash
-sudo vcmd -c /tmp/pycore.1/n11 python3 -m http.server
-
-sudo bash TCPDumpRun && sudo bash NiktoStart
-
