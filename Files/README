@@ -9,3 +9,6 @@
 5)sudo bash StartServices
 **** what you see is what tcp dump is reading that nikto is doing
 pcap file should appear under Captures folder
+
+3/14/22********************************************************************************************
+Services has a sleep(40) so run right after you start core, can delete if you in a hurry
