@@ -1,8 +1,9 @@
 #!/bin/bash
 sleep 40
-sudo cp -R /home/ubuntu/core/Files/NodeScriptsCopy/*   /tmp/pycore.1/n11.conf
-sudo cp -R /home/ubuntu/core/Files/NodeScriptsCopy/*   /tmp/pycore.1/n12.conf
+sudo cp -R /home/ubuntu/core/Files/Services/*   /tmp/pycore.1/n11.conf
+sudo cp -R /home/ubuntu/core/Files/Services/*   /tmp/pycore.1/n12.conf
 sudo vcmd -c /tmp/pycore.1/n11  bash WebServerRun &
 sudo vcmd -c /tmp/pycore.1/n11  bash TCPDumpRun &
-sudo vcmd -c /tmp/pycore.1/n12  bash NiktoRun
+sudo vcmd -c /tmp/pycore.1/n12  bash NiktoRun &
+sudo vcmd -c /tmp/pycore.1/n12  bash NMapRun &
 
