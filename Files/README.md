@@ -12,3 +12,8 @@ pcap file should appear under Captures folder
 
 3/14/22********************************************************************************************
 Services has a sleep(40) so run right after you start core, can delete if you in a hurry
+
+Make sure that the daemon service is running using
+sudo systemctl enable core-daemon
+sudo systemctl start core-daemon
+

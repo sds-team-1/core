@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo core-python RunFromXML 
+core-python RunFromXML 
