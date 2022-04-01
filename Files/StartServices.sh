@@ -1,5 +1,5 @@
 #!/bin/bash
-dir=$(pwd)/Services/*
+dir=/home/ubuntu/core/Files/Services/*
 
 sudo SetupCapturesFolder.sh
 
