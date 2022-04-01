@@ -17,3 +17,5 @@ Make sure that the daemon service is running using
 sudo systemctl enable core-daemon
 sudo systemctl start core-daemon
 
+For allowing ssh install sudo apt-get install openssh-server
+
