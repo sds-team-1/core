@@ -4,6 +4,7 @@ from core.nodes.base import CoreNode
 from core.emulator.data import IpPrefixes, NodeOptions
 import sys
 import logging
+import os
 
 Log_Format = "%(levelname)s %(asctime)s - %(message)s"
 
@@ -22,8 +23,8 @@ coreemu = CoreEmu()
 session = coreemu.create_session()
 
 print('test')
-
-path = Path("/home/ubuntu/core/Files/topology.xml")
+str = sys.argv[1]
+path = Path(str)
 session.open_xml(path, start=True)
 
 """
