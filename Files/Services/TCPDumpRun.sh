@@ -1,3 +1,10 @@
 #!/bin/bash
-sudo tcpdump -s 0 -w $1
+#if [ -z "$1" ]
+#then 
+#    echo "empty arguments TCPDump"
+#else
+#    sudo tcpdump $1 
+#fi
+sudo tcpdump -s 0 -w ~/core/Files/pcaps/pcap1.pcap
+
 

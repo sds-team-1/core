@@ -23,8 +23,8 @@ coreemu = CoreEmu()
 session = coreemu.create_session()
 
 print('test')
-str = sys.argv[1]
-path = Path(str)
+#str = sys.argv[1]
+path = Path("/home/ubuntu/core/Files/topology.xml")
 session.open_xml(path, start=True)
 
 """
