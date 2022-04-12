@@ -13,17 +13,11 @@ logging.basicConfig(stream = sys.stdout,
                     format = Log_Format, 
                     level = logging.INFO)
 
-
-
 logger = logging.getLogger(__name__)
 
-
-print('test')
 coreemu = CoreEmu()
 session = coreemu.create_session()
 
-print('test')
-#str = sys.argv[1]
 path = Path("/home/ubuntu/core/Files/topology.xml")
 session.open_xml(path, start=True)
 
@@ -35,17 +29,7 @@ Add a node to the session, based on the provided node data.
 :return: created node
 :raises core.CoreError: when an invalid node type is given
 """
-#options = NodeOptions(x=100, y=100)
-#n1 = session.add_node(CoreNode, options=options)
 	
-
-print('test')
 session.instantiate()
-
-print('test')
-
-# do whatever you like here
-#input("press enter to shutdown")
-
 # stop session
 #session.shutdown()
