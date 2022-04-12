@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 coreemu = CoreEmu()
 session = coreemu.create_session()
 
-path = Path("/home/ubuntu/core/Files/temp.xml")
+path = Path("/home/ubuntu/core/Files/topology.xml")
 session.open_xml(path, start=True)
 
 
