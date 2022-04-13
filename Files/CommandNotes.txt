@@ -1,0 +1,13 @@
+tcpdump -s 0 -i eth0 -w /home/ubuntu/Desktop/mycap.pcap
+10.0.1.20/24 Node 11
+10.0.1.21/24 Node 12
+10.0.1.21/24 Node 12
+
+ubuntu@ubuntu1804:/tmp/pycore.1/n11.conf$ 
+root@n11:/tmp/pycore.1/n11.conf# 
+sudo core-cleanup
+vcmd -c /tmp/pycore.1/n11 ******************** used to run commands in a newtwork subspace
+
+
+(sudo tcpdump -s 0 -i eth0 -w /home/ubuntu/core/Files/Captures/mycap.pcap) 
+
