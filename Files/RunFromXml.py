@@ -16,7 +16,7 @@ logging.basicConfig(stream = sys.stdout,
                     level = logging.INFO)
 
 logger = logging.getLogger(__name__)
-path = Path("/home/ubuntu/core/Files/new.xml")
+path = Path("/home/ubuntu/core/Files/topology.xml")
 
 coreemu = CoreEmu()
 session = coreemu.create_session()
