@@ -1,2 +1,8 @@
 #!/bin/bash
-sudo nmap --system-dns 10.0.1.20 
+v=$(cat NMapArgs.txt)
+if [ -z "$v" ]
+then 
+    echo "empty arguments Nmap"
+else
+    sudo nmap $v 
+fi

@@ -1,2 +1,10 @@
 #!/bin/bash
-sudo nikto -h 10.0.1.20 -p 8000
+v=$(cat NiktoArgs.txt)
+if [ -z "$v" ]
+then
+    echo "empty arguments for Nikto"
+else
+    sudo nikto $v 
+fi
+
+
