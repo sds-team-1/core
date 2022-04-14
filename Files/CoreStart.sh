@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo core-python /home/ubuntu/core/Files/RunFromXML.py $1
+sudo core-python /home/ubuntu/core/Files/RunFromXml.py
