@@ -1,12 +1,20 @@
 #!/bin/bash
-dir=/home/ubuntu/core/Files/Services/*
 
-sudo bash SetupCapturesFolder.sh
+# $1 == tcp node name and pcap file name
+# $1 == webserver node
 
-sudo cp -R $dir   /tmp/pycore.1/n11.conf
-sudo cp -R $dir   /tmp/pycore.1/n12.conf
-sudo vcmd -c /tmp/pycore.1/n11  bash WebServerRun.sh &
-sudo vcmd -c /tmp/pycore.1/n11  bash TCPDumpRun.sh $1 &
-sudo vcmd -c /tmp/pycore.1/n12  bash NiktoRun.sh $2 &
-sudo vcmd -c /tmp/pycore.1/n12  bash NMapRun.sh $3
+# $2 nikto/nmap scanner node name
+
+# 3 ip of tcp node
+
+
+sudo bash CopyServices.sh
+
+sudo bash RunTCPDump.sh $1 $1.pcap
+sudo bash RunWebserver.sh $1
+
+# --system-dns 10.0.1.20
+
+sudo bash RunNmap.sh $2 "--system-dns $3" 
+
 
