@@ -12,4 +12,4 @@
 #sudo tcpdump -s 0 -w ~/core/Files/pcaps/pcap1.pcap
 
 result=${PWD##*/} 
-sudo tcpdump -s 0 -w /home/ubuntu/core/Files/pcaps/${result//.conf/}.pcap 
+sudo tcpdump -s 0 -w /tmp/pcaps/${result//.conf/}.pcap 
