@@ -11,5 +11,6 @@
 
 #sudo tcpdump -s 0 -w ~/core/Files/pcaps/pcap1.pcap
 
-result=${PWD##*/} 
-sudo tcpdump -s 0 -w /tmp/pcaps/${result//.conf/}.pcap 
+result=${PWD##*/}
+timestamp=$(date +%s) 
+sudo tcpdump -s 0 -w /tmp/pcaps/${result//.conf/}-$timestamp.pcap 
