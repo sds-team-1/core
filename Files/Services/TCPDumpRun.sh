@@ -13,4 +13,4 @@
 
 result=${PWD##*/}
 timestamp=$(date +%s) 
-sudo tcpdump -s 0 -w /tmp/pcaps/${result//.conf/}-$timestamp.pcap 
+sudo tcpdump -s 0 -G 60 -W 1 -w /tmp/pcaps/${result//.conf/}-$timestamp.pcap 
